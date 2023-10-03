@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # 6-print_comb3.py
-# Loop through tens digits (0 to 8)
-for tens_digit in range(9):
-    # Loop through units digits (tens_digit + 1 to 9)
-    for units_digit in range(tens_digit + 1, 10):
-        print(f"{tens_digit}{units_digit}", end=", ")
 
-# Print the last combination with a newline
-print("89")
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
+        else:
+            print("{}{}".format(digit1, digit2), end=", ")
+            
