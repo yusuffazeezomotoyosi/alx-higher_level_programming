@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 
-for i in range(ord('z'), ord('A') - 1, -1):
-        print(chr(i) + chr(i - 32) if (i - ord('A')) % 2 == 0 else chr(i), end='')
+for i in range(-ord('z'), -(ord('a') - 1)):
+    if (i % 2) != 0:
+        i = i - (ord('A') - ord('a'))
+    print("{}".format(chr(-i)), end='')
