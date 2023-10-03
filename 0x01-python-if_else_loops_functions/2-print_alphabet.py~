@@ -1,0 +1,6 @@
+# Loop through lowercase alphabet characters from 'a' to 'z'
+for low in range(ord('a'), ord('z') + 1):
+        print(chr(low), end='')
+
+# Print a newline character to separate the output
+print()
